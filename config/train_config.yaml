@@ -1,0 +1,47 @@
+training:
+  log_dir: "./logs"                  # Directory for TensorBoard logs
+  print_freq: 100                    # Frequency of printing training logs
+  save_epoch_freq: 50                 # Save the model every N epochs
+  lr: 0.0002                         # Learning rate
+  beta1: 0.5                         # Beta1 for Adam optimizer
+  lambda_L1: 100.0                   # L1 loss weight
+  gpu_ids: [0]                       # GPUs to use
+
+data:
+  dataroot: "./dataset"              # Path to dataset
+  batch_size: 64                     # Batch size
+  num_threads: 4                     # Number of threads for data loading
+  direction: "AtoB"                  # AtoB or BtoA
+  load_size: 286                     # Scale images to this size
+  crop_size: 256                     # Crop images to this size
+
+model:
+  n_epochs: 400                      # Number of epochs
+  n_epochs_decay: 100                # Number of epochs for linear learning rate decay
+  lambda_bce: 500                    # Weight for BCE loss
+  epoch_count: 1                     # Starting epoch count
+  netG: "unet_256"                   # Generator architecture
+  netD: "basic"                      # Discriminator architecture
+  input_nc: 3                        # Number of input channels
+  output_nc: 3                       # Number of output channels
+  model: "microscopy"                # Model type (pix2pix, cyclegan)
+  isTrain: true                      # Train or test the model
+  name: "microscopy"                 # Name of the run
+  preprocess: "resize_and_crop"      # Preprocessing method
+  ngf: 64                            # Number of generator filters
+  ndf: 64                            # Number of discriminator filters
+  norm: "batch"                      # Normalization layer
+  no_dropout: false                  # Use dropout layers
+  init_type: "normal"                # Weight initialization method
+  init_gain: 0.02                    # Weight initialization gain
+  n_layers_D: 3                      # Number of discriminator layers
+  lr_policy: "linear"                # Learning rate policy
+  lr_decay_iters: 50                 # Learning rate decay iterations
+  load_iter: 0                       # Load from which epoch
+  epoch: 'latest'                    # Load from which epoch
+  continue_train: false              # Continue training from the latest checkpoint
+  verbose: false                     # Print network architecture
+  direction: "AtoB"                  # AtoB or BtoA
+  gan_mode: "vanilla"                # GAN loss mode
+
+  

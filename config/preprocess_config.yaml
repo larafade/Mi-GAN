@@ -1,0 +1,20 @@
+preprocessing:
+  input_dir: "mi_gan/data/raw/"        # Directory containing the raw images
+  output_dir: "mi_gan/data/processed/" # Directory to save the processed images
+  crop_size: 256                # Size of the crops
+  overlap: 0.5                  # Overlap between crops
+  grayscale: true               # Whether to convert images to grayscale
+  samples: 'all'                # List of sample identifiers to process of the form ["01", "02"], or "all" for all samples
+  input_degree: "1200"          # Polishing degree of input images
+  output_degree: "4000"         # Polishing degree of output images
+  file_type: "jpg"              # File type of the input images (e.g., "jpg", "png")
+  train_ratio: 0.7              # Ratio of the dataset to use for training
+  val_ratio: 0.15               # Ratio of the dataset to use for validation
+  test_ratio: 0.15              # Ratio of the dataset to use for testing
+
+augmentation:
+  add_noise: false              # Whether to add noise to the images
+  noise_level: 0.1              # Level of noise to add to the images
+  rotate: false                 # Whether to rotate the images
+  rotation_range: [-30, 30]     # Range of rotation angles
+

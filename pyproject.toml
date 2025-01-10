@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Mi-GAN"
+version = "0.1.0"
+description = " Generative Adversarial Framework for Microscopy Image Denoising and Accurate Porosity Analysis in Composite Materials"
+authors = [
+    { name = "Lara Fadel", email = "larafade@usc.edu" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=1.9.0",
+    "torchvision>=0.10.0",
+    "numpy",
+    "Pillow",
+    "pyyaml",
+    "tensorboard",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+]
+
+[project.urls]
+Documentation = "https://github.com/larafade/Mi-GAN"
+Source = "https://github.com/larafade/Mi-GAN"
+Tracker = "https://github.com/larafade/Mi-GAN/issues"

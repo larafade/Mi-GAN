@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# PyCharm or VSCode settings
+.idea/
+.vscode/
+
+# Logs, weights and temporary files
+*.log
+*.tmp
+*.pth
+
+# TensorBoard logs
+logs/
+
+# Dataset, checkpoints and outputs
+data/
+!data/base_dataset.py
+dataset/
+results/
+checkpoints/

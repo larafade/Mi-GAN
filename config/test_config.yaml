@@ -1,0 +1,25 @@
+# Testing Configuration
+testing:
+  batch_size: 1                                  # Number of images per batch
+  use_gpu: true                                  # Whether to use GPU for testing
+  run_name: "microscopy"                         # Name of the test run
+  load_dir: "checkpoints/pretrained"             # Directory to load pretrained model
+  test_dir: "dataset/test/"                      # Directory containing test dataset
+  output_dir: "results/test/"                         # Directory to save test results
+  num_test_images: 10                            # Number of test images to process
+  crop_size: 256                                 # Size to crop the images
+
+isTrain: false                                   # Flag to indicate testing mode
+gpu_ids: [0]                                     # List of GPU IDs to use
+checkpoints_dir: "checkpoints/pretrained/"       # Directory to save checkpoints
+preprocess: "resize_and_crop"                    # Preprocessing method
+model_suffix: ""                                 # Suffix for the model name
+input_nc: 3                                      # Number of input image channels
+output_nc: 3                                     # Number of output image channels
+ngf: 64                                          # Number of generator filters in the first layer
+ndf: 64                                          # Number of discriminator filters in the first layer
+netG: "unet_256"                                 # Generator network architecture
+norm: "batch"                                    # Normalization method
+no_dropout: false                                # Whether to use dropout in the generator
+init_type: "normal"                              # Initialization method for network weights
+init_gain: 0.02                                  # Gain for the initialization method
