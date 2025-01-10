@@ -1,8 +1,8 @@
 # MiGAN: Generative Adversarial Framework for Microscopy Image Denoising and Accurate Porosity Analysis in Composite Materials
 [![Python](https://img.shields.io/badge/python-3.10-blue?style=for-the-badge)](https://docs.python.org/3/whatsnew/3.10.html)
 [![Request Dataset Access](https://img.shields.io/badge/Request%20Access-Google%20Form-blue?style=for-the-badge&logo=google)](https://docs.google.com/forms/d/e/1FAIpQLSf3Y4luJThtKg9nrqwB6-Y6HkDNFbBSVRGZYij5MmZtWu8tsg/viewform)
-[![Website](https://img.shields.io/badge/Website-Visit%20Our%20Site-green?style=for-the-badge&logo=google-chrome)](https://larafade.github.io/)
-[![Paper](https://img.shields.io/badge/Paper-Coming%20Soon-orange?style=for-the-badge)](https://larafade.github.io/)
+[![Website](https://img.shields.io/badge/Website-Visit%20Our%20Site-green?style=for-the-badge&logo=google-chrome)]()
+[![Paper](https://img.shields.io/badge/Paper-Coming%20Soon-orange?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)](https://opensource.org/license/mit)
 
 ---
