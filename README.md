@@ -17,7 +17,7 @@
 ## Authors
 - **[Lara Fadel](https://composites.usc.edu/lara-fadel/), [Paulo Branicio](https://viterbi.usc.edu/directory/faculty/Branicio/Paulo), [Steven Nutt](https://viterbi.usc.edu/directory/faculty/Nutt/Steven)**
  
-  McGill Composite Center  
+  M.C. Gill Composite Center  
   Department of Chemical Engineering and Material Science, University of Southern California  
   Email: [larafade@usc.edu](mailto:larafade@usc.edu)
 
